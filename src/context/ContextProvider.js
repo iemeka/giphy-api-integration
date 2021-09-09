@@ -9,7 +9,7 @@ function ContextProvider({ children }) {
   useEffect(() => {
     axios
       .get(
-        "http://api.giphy.com/v1/gifs/trending?api_key=BBllUXSslRRw4234LL4rT5VfMbKLLG6A"
+        "https://api.giphy.com/v1/gifs/trending?api_key=BBllUXSslRRw4234LL4rT5VfMbKLLG6A"
       )
       .then((response) => {
         setTrendingGif(response.data.data);
@@ -19,7 +19,7 @@ function ContextProvider({ children }) {
   const search = (keyword) => {
     axios
       .get(
-        `http://api.giphy.com/v1/gifs/search?q=${keyword}&api_key=BBllUXSslRRw4234LL4rT5VfMbKLLG6A`
+        `https://api.giphy.com/v1/gifs/search?q=${keyword}&api_key=BBllUXSslRRw4234LL4rT5VfMbKLLG6A`
       )
       .then((response) => {
         setSearchResult(response.data.data);
