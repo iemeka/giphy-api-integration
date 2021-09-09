@@ -1,0 +1,20 @@
+.trending {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.trending .top {
+  padding: 50px;
+}
+
+.trending .top a {
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 255, 0.664);
+}
+
+.trending .content{
+  flex: 1;
+}

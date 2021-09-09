@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+.heading-container{
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.heading-container h1{
+  font-family: 'Kelly Slab', cursive;
+  font-size: 2rem;
+}
+
+.heading-container span{
+  margin: 5px;
+}
+
+.heading-container span a{
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgba(0, 0, 255, 0.664);
+}
+
+.heading-container span:hover{
+  border-bottom: 2px solid #888;
+}
+
+.heading-container h4{
+  color: rgb(78, 75, 75);
+  font-size: 1rem;
+}

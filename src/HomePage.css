@@ -1,21 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tourney:wght@100&display=swap");
 
-.homepage{
-  border: 3px solid red;
+.homepage {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.homepage .top{
-  border: 2px solid green;
+.homepage .top {
   padding: 10px;
+  padding-left: 50px;
 }
-.homepage .top h1{
+.homepage .top h1 {
   font-size: 2rem;
-  font-family: 'Monoton',cursive;
-  color: rgba(121, 117, 117, 0.76);
-
+  font-family: "Tourney", cursive;
+  color: rgba(87, 83, 83, 0.76);
 }
 
-.homepage .content{
-  border: 2px solid orange;
+.homepage .content {
+  flex: 1;
+  display: flex;
+}
+
+.homepage .content .intro {
+  margin: 20px auto;
 }

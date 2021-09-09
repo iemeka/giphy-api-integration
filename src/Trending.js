@@ -7,12 +7,13 @@ import "./Trending.css";
 
 export default function Trending() {
   const { trendingGif } = useContext(appContext);
-  console.log(trendingGif);
   return (
     <div className="trending">
-      <div className="top">  <Link to="/giphy-api-integration">home</Link>Trending</div>
+      <div className="top">
+        <Link to="/giphy-api-integration">home</Link>
+      </div>
       <div className="heading">
-       <Headings description="Trending List Of Giphy" />
+        <Headings description="Trending List Of Giphy" />
       </div>
       <div className="content">
         <LoadResult result={trendingGif} page={true} />
