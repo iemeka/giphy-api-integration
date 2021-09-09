@@ -10,12 +10,12 @@ export default function Trending() {
   console.log(trendingGif);
   return (
     <div className="trending">
-      <div className="top">  <Link to="/">home</Link>Trending</div>
+      <div className="top">  <Link to="/giphy-api-integration">home</Link>Trending</div>
       <div className="heading">
        <Headings description="Trending List Of Giphy" />
       </div>
       <div className="content">
-        <LoadResult result={trendingGif} />
+        <LoadResult result={trendingGif} page={true} />
       </div>
     </div>
   );

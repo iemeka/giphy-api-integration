@@ -6,11 +6,12 @@ import Headings from "./shared/Headings.js";
 import LoadResult from "./shared/LoadResults.js";
 export default function Search() {
   const { search, searchResult } = useContext(appContext);
+  const [loading, setLoading] = useState(false);
   const [keyword, setKeyWord] = useState();
   return (
     <div className="search">
       <div className="top">
-        <Link to="/">home</Link>
+        <Link to="/giphy-api-integration">home</Link>
       </div>
       <div className="content">
         <div className="headings">
@@ -21,7 +22,7 @@ export default function Search() {
           <button onClick={() => search(keyword)}>submit</button>
         </div>
         <div className="search-result">
-          <LoadResult result={searchResult} />
+          <LoadResult result={searchResult} page={loading} />
         </div>
       </div>
     </div>

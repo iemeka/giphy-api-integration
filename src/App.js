@@ -11,9 +11,9 @@ function App() {
       <div className="container">
         <ContextProvider>
           <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route exact path="/trending" component={Trending} />
-            <Route exact path="/search" component={Search} />
+            <Route exact path="/giphy-api-integration" component={HomePage} />
+            <Route exact path="/giphy-api-integration/trending" component={Trending} />
+            <Route exact path="/giphy-api-integration/search" component={Search} />
           </Switch>
         </ContextProvider>
       </div>
