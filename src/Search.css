@@ -1,0 +1,11 @@
+.search .searchbox {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.search .searchbox input {
+  height: 30px;
+  width: 300px;
+}

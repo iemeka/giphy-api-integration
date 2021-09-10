@@ -19,7 +19,7 @@ export default function Search() {
         </div>
         <div className="searchbox">
           <input type="text" onChange={(e) => setKeyWord(e.target.value)} />
-          <button onClick={() => search(keyword)}>submit</button>
+          <button onClick={() => search(keyword)}>Search</button>
         </div>
         <div className="search-result">
           <LoadResult result={searchResult} page={loading} />
