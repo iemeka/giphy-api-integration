@@ -17,7 +17,7 @@ export default function LoadResult({ result }) {
 
               <div className="card-detail">
                <span> by : {item.username} </span>
-                {item.trending_datetime}
+                <span>date of trend : {item.trending_datetime} </span>
               </div>
             </div>
           ))}
